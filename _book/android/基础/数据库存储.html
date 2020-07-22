@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.1.2 习惯写法 · GitBook</title>
+        <title>1.2.4 数据库存储 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../基础/AAC.html" />
+    <link rel="next" href="网络.html" />
     
     
-    <link rel="prev" href="函数.html" />
+    <link rel="prev" href="架构组件.html" />
     
 
     </head>
@@ -120,9 +120,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="readme.html">
+        <li class="chapter " data-level="1.2.1" data-path="../kotlin/readme.html">
             
-                <a href="readme.html">
+                <a href="../kotlin/readme.html">
             
                     
                     1.1 kotlin
@@ -134,9 +134,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1.1" data-path="函数.html">
+        <li class="chapter " data-level="1.2.1.1" data-path="../kotlin/函数.html">
             
-                <a href="函数.html">
+                <a href="../kotlin/函数.html">
             
                     
                     1.1.1 函数
@@ -147,9 +147,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.1.2" data-path="习惯写法.html">
+        <li class="chapter " data-level="1.2.1.2" data-path="../kotlin/习惯写法.html">
             
-                <a href="习惯写法.html">
+                <a href="../kotlin/习惯写法.html">
             
                     
                     1.1.2 习惯写法
@@ -165,9 +165,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../基础/AAC.html">
+        <li class="chapter " data-level="1.2.2" data-path="AAC.html">
             
-                <a href="../基础/AAC.html">
+                <a href="AAC.html">
             
                     
                     1.2.1 AAC
@@ -179,9 +179,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.2.1" data-path="../基础/AAC.html">
+        <li class="chapter " data-level="1.2.2.1" data-path="AAC.html">
             
-                <a href="../基础/AAC.html">
+                <a href="AAC.html">
             
                     
                     1.2.1 AAC
@@ -205,9 +205,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.3" data-path="../基础/架构组件.html">
+        <li class="chapter " data-level="1.2.2.3" data-path="架构组件.html">
             
-                <a href="../基础/架构组件.html">
+                <a href="架构组件.html">
             
                     
                     1.2.3 架构组件
@@ -218,9 +218,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.4" data-path="../基础/数据库存储.html">
+        <li class="chapter active" data-level="1.2.2.4" data-path="数据库存储.html">
             
-                <a href="../基础/数据库存储.html">
+                <a href="数据库存储.html">
             
                     
                     1.2.4 数据库存储
@@ -231,9 +231,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.5" data-path="../基础/网络.html">
+        <li class="chapter " data-level="1.2.2.5" data-path="网络.html">
             
-                <a href="../基础/网络.html">
+                <a href="网络.html">
             
                     
                     1.2.5 网络
@@ -284,7 +284,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >1.1.2 习惯写法</a>
+        <a href="../.." >1.2.4 数据库存储</a>
     </h1>
 </div>
 
@@ -299,48 +299,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x5EF6;&#x8FDF;&#x5C5E;&#x6027;</p>
-<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> p</span>: String by Lazy{
-    <span class="hljs-comment">//</span>
-}
-</code></pre>
-<p>&#x5BF9;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x8C03;&#x7528;&#x591A;&#x4E2A;&#x65B9;&#x6CD5;&#xFF08;&#x4F7F;&#x7528;with&#xFF09;</p>
-<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Turtle</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">penDown</span><span class="hljs-params">()</span></span>
-    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">penUp</span><span class="hljs-params">()</span></span>
-    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">turn</span><span class="hljs-params">(degrees: <span class="hljs-type">Double</span>)</span></span>
-    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">forward</span><span class="hljs-params">(pixels: <span class="hljs-type">Double</span>)</span></span>
-}
-
-<span class="hljs-variable"><span class="hljs-keyword">val</span> myTurtle</span> = Turtle()
-with(myTurtle) { <span class="hljs-comment">// &#x753B;&#x4E00;&#x4E2A; 100 &#x50CF;&#x7D20;&#x7684;&#x6B63;&#x65B9;&#x5F62;</span>
-    penDown()
-    <span class="hljs-keyword">for</span> (i <span class="hljs-keyword">in</span> <span class="hljs-number">1.</span><span class="hljs-number">.4</span>) {
-        forward(<span class="hljs-number">100.0</span>)
-        turn(<span class="hljs-number">90.0</span>)
-    }
-    penUp()
-}
-</code></pre>
-<p>&#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#xFF08;apply&#xFF09;</p>
-<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> myRectangle</span> = Rectangle().apply {
-    length = <span class="hljs-number">4</span>
-    breadth = <span class="hljs-number">5</span>
-    color = <span class="hljs-number">0xFAFAFA</span>
-}
-<span class="hljs-comment">//&#x914D;&#x7F6E;&#x672A;&#x51FA;&#x73B0;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x5F88;&#x65B9;&#x4FBF;</span>
-</code></pre>
-<p>try with resources&#x7ED3;&#x6784;</p>
-<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> stream</span> = Files.newInputStream(Paths.<span class="hljs-keyword">get</span>(<span class="hljs-string">&quot;/some/file.txt&quot;</span>))
-stream.buffered().reader().use { reader -&gt;
-    println(reader.readText())
-}
-</code></pre>
-<p>&#x4EA4;&#x6362;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;</p>
-<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">var</span> a</span> = <span class="hljs-number">1</span>
-<span class="hljs-variable"><span class="hljs-keyword">var</span> b</span> = <span class="hljs-number">2</span>
-a = b.also { b = a }
-</code></pre>
+                                <p>[toc]</p>
+<h1 id="1-&#x6982;&#x8FF0;">1 &#x6982;&#x8FF0;</h1>
+<p>&#x5B89;&#x5353;&#x4E2D;&#x63D0;&#x4F9B;&#x4EE5;&#x4E0B;&#x5B58;&#x50A8;&#x65B9;&#x5F0F;</p>
+<ul>
+<li><a href="https://developer.android.com/guide/topics/data/data-storage?hl=zh_cn#filesInternal" target="_blank">&#x5185;&#x90E8;&#x6587;&#x4EF6;&#x5B58;&#x50A8;</a>&#xFF1A;&#x5728;&#x8BBE;&#x5907;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B58;&#x50A8;&#x5E94;&#x7528;&#x79C1;&#x6709;&#x6587;&#x4EF6;&#x3002;</li>
+<li><a href="https://developer.android.com/guide/topics/data/data-storage?hl=zh_cn#filesExternal" target="_blank">&#x5916;&#x90E8;&#x6587;&#x4EF6;&#x5B58;&#x50A8;</a>&#xFF1A;&#x5728;&#x5171;&#x4EAB;&#x7684;&#x5916;&#x90E8;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B58;&#x50A8;&#x6587;&#x4EF6;&#x3002;&#x6B64;&#x65B9;&#x5F0F;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x5171;&#x4EAB;&#x7684;&#x7528;&#x6237;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x7167;&#x7247;&#x3002;</li>
+<li><a href="https://developer.android.com/guide/topics/data/data-storage?hl=zh_cn#pref" target="_blank">&#x5171;&#x4EAB;&#x9996;&#x9009;&#x9879;</a>&#xFF1A;&#x5728;&#x952E;&#x503C;&#x5BF9;&#x4E2D;&#x5B58;&#x50A8;&#x79C1;&#x6709;&#x7684;&#x539F;&#x59CB;&#x6570;&#x636E;&#x3002;</li>
+<li><a href="https://developer.android.com/guide/topics/data/data-storage?hl=zh_cn#db" target="_blank">&#x6570;&#x636E;&#x5E93;</a>&#xFF1A;&#x5728;&#x79C1;&#x6709;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x5316;&#x6570;&#x636E;&#x3002;</li>
+</ul>
+<p>&#x9664;&#x4E86;&#x5916;&#x90E8;&#x5B58;&#x50A8;&#x7684;&#x67D0;&#x4E9B;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x5916;&#xFF0C;&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x9009;&#x9879;&#x5747;&#x9002;&#x7528;&#x4E8E;&#x5E94;&#x7528;&#x79C1;&#x6709;&#x6570;&#x636E;&#xFF08;&#x5373;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x65E0;&#x6CD5;&#x81EA;&#x7136;&#x8BBF;&#x95EE;&#x7684;&#x6570;&#x636E;&#xFF09;&#x3002;&#x9009;&#x7528;&#x5B58;&#x50A8;&#x65B9;&#x6848;&#x65F6;&#x8003;&#x8651;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#xFF0C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x662F;&#x5426;&#x5171;&#x4EAB;&#x7B49;&#x56E0;&#x7D20;&#x3002;</p>
 
                                 
                                 </section>
@@ -368,12 +336,12 @@ a = b.also { b = a }
 
             
                 
-                <a href="函数.html" class="navigation navigation-prev " aria-label="Previous page: 1.1.1 函数">
+                <a href="架构组件.html" class="navigation navigation-prev " aria-label="Previous page: 1.2.3 架构组件">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../基础/AAC.html" class="navigation navigation-next " aria-label="Next page: 1.2.1 AAC">
+                <a href="网络.html" class="navigation navigation-next " aria-label="Next page: 1.2.5 网络">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -384,7 +352,7 @@ a = b.also { b = a }
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.1.2 习惯写法","level":"1.2.1.2","depth":3,"next":{"title":"1.2.1 AAC","level":"1.2.2","depth":2,"path":"android/基础/AAC.md","ref":"android/基础/AAC.md","articles":[{"title":"1.2.1 AAC","level":"1.2.2.1","depth":3,"path":"android/基础/AAC.md","ref":"android/基础/AAC.md","articles":[]},{"title":"1.2.2 安卓基础","level":"1.2.2.2","depth":3,"path":"android/ 基础/安卓基础.md","ref":"android/ 基础/安卓基础.md","articles":[]},{"title":"1.2.3 架构组件","level":"1.2.2.3","depth":3,"path":"android/基础/架构组件.md","ref":"android/基础/架构组件.md","articles":[]},{"title":"1.2.4 数据库存储","level":"1.2.2.4","depth":3,"path":"android/基础/数据库存储.md","ref":"android/基础/数据库存储.md","articles":[]},{"title":"1.2.5 网络","level":"1.2.2.5","depth":3,"path":"android/基础/网络.md","ref":"android/基础/网络.md","articles":[]}]},"previous":{"title":"1.1.1 函数","level":"1.2.1.1","depth":3,"path":"android/kotlin/函数.md","ref":"android/kotlin/函数.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"android/kotlin/习惯写法.md","mtime":"2020-07-22T03:06:49.553Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-22T06:38:07.435Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.2.4 数据库存储","level":"1.2.2.4","depth":3,"next":{"title":"1.2.5 网络","level":"1.2.2.5","depth":3,"path":"android/基础/网络.md","ref":"android/基础/网络.md","articles":[]},"previous":{"title":"1.2.3 架构组件","level":"1.2.2.3","depth":3,"path":"android/基础/架构组件.md","ref":"android/基础/架构组件.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"android/基础/数据库存储.md","mtime":"2020-07-22T03:06:49.556Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-22T06:38:07.435Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
