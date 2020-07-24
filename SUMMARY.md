@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 
-*  android
+*  Android
 
     * 1 基础
         * [1.1 AAC](android/基础/AAC.md)
@@ -14,10 +14,10 @@
 * Language
 
     * 1 Java
-        * 2.1 Memory
-            * 2.1.1 [Volatile](Language/java/memory/volatile.md)
-    * 2 kotlin
-        * [1.1.1 函数](Language/kotlin/函数.md)
-        * [1.1.2 习惯写法](Language/kotlin/习惯写法.md)
+        * 1.1 Memory
+            * 1.1.1 [Volatile](language/java/memory/volatile.md)
+    * 2 Kotlin
+        * [2.1 函数](language/kotlin/函数.md)
+        * [2.1 习惯写法](language/kotlin/习惯写法.md)
 
      
