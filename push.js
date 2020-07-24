@@ -1,21 +1,18 @@
-var pro = require('child_process');
+var shell = require("shelljs");
+
 var message
 process.argv.forEach(function(val, index, array){
         message = val
 })
-pro.exec("gitbook build ./ ./docs", function (error, stdout, stderr) {
-        console.log('gitbook build success');
-    });
 
-pro.exec("git add .", function (error, stdout, stderr) {
-        console.log('git add all');
-    });
+shell.exec("gitbook build ./ ./docs")
+console.log("gitbook build")
 
-pro.exec("git commit -m "+message, function (error, stdout, stderr) {
-        console.log('git commit '+message);
-    });
+shell.exec("git add .")
+console.log("git add all")
 
-pro.exec("git push github master", function (error, stdout, stderr) {
-        console.log('git push success');
-    });
+shell.exec("git commit -m "+message)
+console.log("git commit")
 
+shell.exec("git push github master")
+console.log("git push")
